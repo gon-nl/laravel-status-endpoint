@@ -28,7 +28,7 @@ You can configure the warning thresholds for both the database and cache checks 
 
 ## Usage
 
-After installation, you can access the `/status` endpoint of your application to get the current status of the database and cache. The endpoint returns a JSON response with the following structure:
+After installation, you can access the `/api/status` endpoint of your application to get the current status of the database and cache. The endpoint returns a JSON response with the following structure:
 
 ```json
 {
