@@ -1,0 +1,41 @@
+{
+  "name": "gon-nl/laravel-status-endpoint",
+  "description": "Laravel Status Endpoint is a Laravel package that adds a simple status endpoint to your application",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Author Name",
+      "email": "author@email.com",
+      "homepage": "http://author.com"
+    }
+  ],
+  "homepage": "https://github.com/gon-nl/laravel-status-endpoint",
+  "keywords": [
+    "Laravel",
+    "LaravelStatusEndpoint"
+  ],
+  "require": {
+    "illuminate/support": "~10"
+  },
+  "autoload": {
+    "psr-4": {
+      "GonNl\\LaravelStatusEndpoint\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GonNl\\LaravelStatusEndpoint\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "GonNl\\LaravelStatusEndpoint\\LaravelStatusEndpointServiceProvider"
+      ],
+      "aliases": {
+        "LaravelStatusEndpoint": "GonNl\\LaravelStatusEndpoint\\Facades\\LaravelStatusEndpoint"
+      }
+    }
+  }
+}
