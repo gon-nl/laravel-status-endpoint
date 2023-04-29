@@ -56,7 +56,7 @@ class StatusController extends BaseController
             'status' => $error ? 'ERROR' : $status,
             'database' => $databaseTime ?: 'ERROR',
             'cache' => $cacheTime ?: 'ERROR',
-            'last_check' => $lastCheck = Cache::get('last_check'),
+            'last_check' => $lastCheck,
             'last_check_human' => now()->parse($lastCheck)->diffForHumans()
         ], $error ? 500 : 200);
     }
